@@ -4,7 +4,7 @@ title: Advanced Cheat Sheet
 ---
 
 # Advanced Vim Cheat Sheet
-The best possible resource on vim is the book [Practical Vim](http://www.amazon.com/Practical-Vim-Thought-Pragmatic-Programmers/dp/1934356980). I’ve outlined some of my personal favorites, and will also put in some plugins that might just change your world.
+The best possible resource on vim is the book [Practical Vim](http://www.amazon.com/Practical-Vim-Thought-Pragmatic-Programmers/dp/1934356980).
 
 ##General
 

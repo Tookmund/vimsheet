@@ -24,7 +24,7 @@ Note: If you’re decent at Vim and want your mind blown, check out [Advanced Vi
 * `0` - (zero) start of line
 * `^` - first non-blank character of line (same as 0w)
 * `$` - end of line
-* Advanced (in order of what I find most useful)
+* Advanced
     * `Ctrl+d` - move down half a page
     * `Ctrl+u` - move up half a page
     * `}` - go forward by paragraph (the next blank line)
@@ -157,10 +157,9 @@ Marks allow you to jump to designated points in your code.
         * restart your terminal and you should see `vim --version` now with `+clipboard`
 
 ## Switch Caps Lock and Escape
-* I highly recommend you switch the mapping of your caps lock and escape keys. You'll love it, promise! Switching the two keys is platform dependent; Google should get you the answer
+* You should switch the mapping of your caps lock and escape keys. You'll love it, promise! Switching the two keys is platform dependent; Google should get you the answer
 
 ## Other
-I don’t personally use these yet, but I’ve heard other people do!
 
 * `:wqa` - Write and quit all open tabs (thanks Brian Zick)
 * `:next` - Moves to the next file when opening multiple with vim(`vim file0 file1 file2...`)
