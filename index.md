@@ -11,8 +11,6 @@ with contributions from [many other people](https://github.com/Tookmund/vimsheet
 
 Note: If you’re decent at Vim and want your mind blown, check out [Advanced Vim](advanced.html).
 
-I’ve compiled a list of *essential* Vim commands that I use every day. I have then given a few instructions on how to make Vim as great as it should be, because it’s painful without configuration.
-
 ## Cursor movement (Inside command/normal mode)
 
 <img src="images/hjkl.png" alt="The four directions in Vim, keys h, j, k, and l."/>
@@ -137,11 +135,8 @@ Marks allow you to jump to designated points in your code.
 * `Ctrl+r` - redo
 * `.` - repeat last command
 
-# Making Vim actually useful
-Vim is quite unpleasant out of the box. For example, typeing `:w` for every file save is awkward and copying and pasting to the system clipboard does not work. But a few changes will get you much closer to the editor of your dreams.
-
 ## .vimrc
-* [My .vimrc file](https://github.com/theicfire/dotfiles/blob/master/vim/.vimrc) has some pretty great ideas I haven't seen elsewhere.
+* [Chris Lambert's .vimrc file](https://github.com/theicfire/dotfiles/blob/master/vim/.vimrc)
 * This is a minimal vimrc that focuses on three priorities:
     * adding options that are strictly better (like more information showing in autocomplete)
     * more convenient keystrokes (like  `[space]w` for write, instead of `:w [enter]`)
@@ -160,22 +155,6 @@ Vim is quite unpleasant out of the box. For example, typeing `:w` for every file
     * For Mac users, homebrew install Vim with the clipboard option. Install homebrew and then run `brew install vim`.
         * then move the old Vim binary: `$ mv /usr/bin/vim /usr/bin/vimold`
         * restart your terminal and you should see `vim --version` now with `+clipboard`
-
-## Plugins
-* The easiest way to make Vim more powerful is to use Vintageous in Sublime Text (version 3). This gives you Vim mode inside Sublime. I suggest this (or a similar setup with the Atom editor) if you aren't a Vim master. Check out [Advanced Vim](advanced.html) if you are.
-* Vintageous is great, but I suggest you change a few settings to make it better.
-    * Clone [this repository](https://github.com/theicfire/Vintageous) to `~/.config/sublime-text-3/Packages/Vintageous`, or similar. Then check out the "custom" branch.
-        * Alternatively, you can get a more updated Vintageous version by cloning [the official](https://github.com/guillermooo/Vintageous) repository and then copying over [this patch](https://github.com/theicfire/Vintageous/commit/19ff6311b01e3ae259b7eb8e3944687b42ba06ff).
-    * Change the user settings (`User/Preferences.sublime-settings`) to include:
-        * `"caret_style": "solid"`
-        * This will make the cursor not blink, like in Vim.
-        * Sublime Text might freeze when you do this. It’s a bug; just restart Sublime Text after changing the file.
-    * `ctrl+r` in Vim means "redo". But there is a handy Ctrl + R shortcut in Sublime Text that gives an "outline" of a file. I remapped it to alt+r by putting this in the User keymap
-        * `{ "keys": ["alt+r"], "command": "show_overlay", "args": {"overlay": "goto", "text": "@"} },`
-    * [Add the ability to toggle Vintageous on and off](https://github.com/guillermooo/Vintageous/wiki/Toggling-Vintageous)
-    * Mac users: you will not have the ability to hold down a navigation key (like holding j to go down). To fix this, run the commands specified here: [https://gist.github.com/kconragan/2510186](https://gist.github.com/kconragan/2510186)
- 
-* Now you should be able to restart sublime and have a great Vim environment! Sweet Dude.
 
 ## Switch Caps Lock and Escape
 * I highly recommend you switch the mapping of your caps lock and escape keys. You'll love it, promise! Switching the two keys is platform dependent; Google should get you the answer
