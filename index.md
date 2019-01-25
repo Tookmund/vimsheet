@@ -6,6 +6,8 @@ title: A Great Vim Cheat Sheet
 
 # A Great Vim Cheat Sheet
 
+Based on [Vimsheet](https://vimsheet.com/) by [Chase Lambert](https://github.com/theicfire)
+with contributions from [many other people](https://github.com/Tookmund/vimsheet/graphs/contributors)
 
 Note: If you’re decent at Vim and want your mind blown, check out [Advanced Vim](advanced.html).
 
