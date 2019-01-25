@@ -100,9 +100,9 @@ Type any of these while some text is selected to apply the action
 
 ## Working with multiple files
 * `:e filename` - Edit a file
-* `:tabe` - Make a new tab
-* `gt` - Go to the next tab
-* `gT` - Go to the previous tab
+* `:tabe [file]` - make a new tab and if mentioned, open `file` in that 
+* `gt` - go to the next tab
+* `gT` - go to the previous tab
 * Advanced
     * `:vsp` - vertically split windows
     * `ctrl+ws` - Split windows horizontally
@@ -170,4 +170,5 @@ Vim is quite unpleasant out of the box. For example, typeing `:w` for every file
 I don’t personally use these yet, but I’ve heard other people do!
 
 * `:wqa` - Write and quit all open tabs (thanks Brian Zick)
-
+* `:next` - Moves to the next file when opening multiple with vim(`vim file0 file1 file2...`)
+* `:!command` - Executes `command` in shell
